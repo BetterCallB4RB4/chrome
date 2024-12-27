@@ -1,0 +1,124 @@
+#TabsToolbar
+{
+    visibility: collapse;
+}
+
+/**
+ * Decrease size of the sidebar header
+ */
+#sidebar-header {
+  font-size: 1.2em !important;
+  padding: 2px 6px 2px 3px !important;
+}
+#sidebar-header #sidebar-close {
+  padding: 3px !important;
+}
+#sidebar-header #sidebar-close .toolbarbutton-icon {
+  width: 14px !important;
+  height: 14px !important;
+  opacity: 0.6 !important;
+}
+
+#sidebar-header {
+  /* display: none; */
+  visibility: collapse !important;
+}
+
+/* Hide splitter */
+#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"] + #sidebar-splitter {
+  display: none !important;
+}
+
+/* Shrink sidebar until hovered */
+:root {
+  --thin-tab-width: 32px;
+  --wide-tab-width: 300px;
+}
+#sidebar-box:not([sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]) {
+  min-width: var(--wide-tab-width) !important;
+  max-width: none !important;
+}
+#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"] {
+  overflow: hidden !important;
+  position: relative !important;
+  transition: all 300ms !important;
+  /*transition: all 0ms 0s !important;*/
+  min-width: var(--thin-tab-width) !important;
+  max-width: var(--thin-tab-width) !important;
+  z-index: 2;
+}
+#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]:hover,
+#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"] #sidebar {
+  /*transition-delay: 0s !important;*/
+  transition: all 300ms !important;
+  min-width: var(--wide-tab-width) !important;
+  max-width: var(--wide-tab-width) !important;
+  z-index: 9998;
+  /* 2024-11-27 - Restored sidebery show-on-hover after 133 update */
+  margin-right: calc((var(--wide-tab-width) - var(--thin-tab-width)) * -1) !important;
+}
+#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]:hover {
+  margin-right: calc((var(--wide-tab-width) - var(--thin-tab-width)) * -1) !important;
+}
+
+#main-window #titlebar {
+  overflow: hidden;
+  transition: height 0.3s 0.3s !important;
+}
+/* Default state: Set initial height to enable animation */
+/* #main-window #titlebar { height: 3em !important; } */
+#main-window[uidensity="touch"] #titlebar { height: 3.35em !important; }
+#main-window[uidensity="compact"] #titlebar { height: 2.7em !important; }
+
+/* Hidden state: Hide native tabs strip */
+/* #main-window[titlepreface*="XXX"] #titlebar { height: 0 !important; } */
+
+/*Reference https://www.userchrome.org/*/
+/* Hide title bar but keep window controls (minimize, maximize, close) */
+/*Hide tabs and other things inside the titlebar, except window buttons*/
+#main-window[titlepreface*="XXX"] .tabbrowser-tab{  display: none !important; }
+#main-windowone !important;}
+#PersonalToolbar {width: 100% !important; }
+#tab-notification-deck {width: 100% !important;   flex-basis: 100%; width: 100% !important;}
+/* Hidden state: Fix z-index of active pinned tabs */
+#main-window[titlepreface*="XXX"] #tabbrowser-tabs { z-index: 0 !important; }
+
+/* 2024-11-27 - Restored window buttons on top right after 133 update */
+/* #main-window[titlepreface*="XXX"] .titlebar-buttonbox-container  { 
+  position: absolute;
+  right: 0;
+  top: 0;
+} */
+#main-window[titlepreface*="XXX"] .titlebar-buttonbox-container  { display: flex !important; box-sizing: border-box;  justify-content:space-between;  flex-direction: row-reverse; flex-wrap: wrap;}
+
+/* Identifica e modifica i pulsanti di chiusura, minimizzazione e massimizzazione */
+/* #main-window[titlepreface*="XXX"] .titlebar-buttonbox {
+    display: flex !important;
+    gap: 0px !important;
+} */
+
+/* Padding set to avoid close button going over the border */
+#main-window[titlepreface*="XXX"] .titlebar-button {
+    margin: 0 !important; /* Assicurati che il margine sia azzerato */
+    padding: 12px !important; /* Assicurati che il padding sia azzerato */
+}
+
+/* Extends the "new bookmars" folder list window ( https://support.mozilla.org/bm/questions/1198233 ) */
+#editBookmarkPanelContent {
+	min-width: 35em !important;}
+#editBMPanel_folderTree { min-height: 40em !important; }[titlepreface*="XXX"] .scrollbox-clip{  width: 0 !important; }
+#main-window[titlepreface*="XXX"] #alltabs-button{  display: none !important; }
+#main-window[titlepreface*="XXX"] .toolbar-items{  display: none !important; }
+
+/*Make sure that the titlebar and navbar are both on the same line*/
+/* 2024-11-27 - Commented to fix 133 update broken css */
+/*
+#main-window[titlepreface*="XXX"] #navigator-toolbox{  display: flex !important; box-sizing: border-box; justify-content:space-between; flex-direction: row-reverse;   flex-wrap: wrap; } */
+
+
+#main-window[titlepreface*="XXX"] .titlebar-spacer{  display: none !important; }
+#main-window[titlepreface*="XXX"] #nav-bar{border-radius: 5px 0 0 0; display: flex; box-sizing: border-box; padding-top: 2px; align-items: center; flex: 1; flex-basis: 50%; width: 100% !important; }
+/* on GNOME you can use max-width: 48px below, if you only have the "Close" button on windows (default) */
+#main-window[titlepreface*="XXX"] #titlebar{border-radius: 0 5px 0 0; border-left: none !important; margin-top: 1px; flex: 1; flex-basis: 50%; width:10% !important; display: flex; max-width: 130px;   align-items: center;background-color: var(--toolbar-bgcolor) !important; border-left: 1px solid var(--toolbar-color);}
+#main-window[titlepreface*="XXX"] #titlebar:-moz-window-inactive{opacity: 1 !important;}
+#main-window[titlepreface*="XXX"] #TabsToolbar > *:not(.titlebar-buttonbox-container) {display: n
