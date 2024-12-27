@@ -11,11 +11,11 @@ https://www.youtube.com/watch?v=po0ocIrTkHg
 set up you default add-on bookmark and personalization 
 ## add-ons:
 Vimium
-Sideberry
-Containers
-Darkreader
-AWS SSO container
-Color Zilla
+* Sideberry
+* Containers
+* Darkreader
+* AWS SSO container
+* Color Zilla
 
 
 # Enable Firefox features
