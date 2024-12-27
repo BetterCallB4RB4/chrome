@@ -1,0 +1,2 @@
+# chrome
+FirefoxCustomization
