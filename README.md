@@ -7,6 +7,17 @@ Graphical aspect may vary depending on your choices in following the instruction
 https://gist.github.com/morrolinux/87aa37396432ea5d14a9220bc4892100
 https://www.youtube.com/watch?v=po0ocIrTkHg
 
+# Sync your firefox account
+set up you default add-on bookmark and personalization 
+## add-ons:
+Vimium
+Sideberry
+Containers
+Darkreader
+AWS SSO container
+Color Zilla
+
+
 # Enable Firefox features
 
 Go to `about:config` and set all of the following to `true`:
