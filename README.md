@@ -10,7 +10,7 @@ https://www.youtube.com/watch?v=po0ocIrTkHg
 # Sync your firefox account
 set up you default add-on bookmark and personalization 
 ## add-ons:
-Vimium
+* Vimium
 * Sideberry
 * Containers
 * Darkreader
