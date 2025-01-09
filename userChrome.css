@@ -29,6 +29,10 @@
   display: none !important;
 }
 
+#userContext-label {
+    max-width: unset !important;
+}
+
 /* Shrink sidebar until hovered */
 :root {
   --thin-tab-width: 32px;
