@@ -1,3 +1,6 @@
+# Disclaimer
+This repository has been cloned and is provided solely for ARCHIVE/AUTOMATION/CUSTOMIZATION purposes in relation to the Morro Linux guide.
+
 # MAIN FEATURE
 - **Multiple AWS SSO Account Handling**
   - Smooth switching between accounts without re-authentication.
@@ -65,8 +68,3 @@ Go to `SideBery settings` --> `Styles editor` and add:
   --tabs-indent: 0;
 }
 ```
-
-# Disclaimer
-This repository has been cloned and is provided solely for archive purposes in relation to the Morro Linux guide. The contents of this repository are not officially supported by the Morro Linux project, and are intended to demonstrate or assist with the steps described in the accompanying guide. Use this repository at your own risk, and ensure you follow all instructions carefully to avoid issues with your system.
-We do not guarantee the accuracy, completeness, or functionality of the files within this repository. Please exercise caution and refer to the official Morro Linux documentation and community resources for any official guidance or support.
-Graphical aspect may vary depending on your choices in following the instructions below, but the end result should look something like this:
