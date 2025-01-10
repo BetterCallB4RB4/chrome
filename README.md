@@ -1,7 +1,20 @@
-# Disclaimer
-This repository has been cloned and is provided solely for archive purposes in relation to the Morro Linux guide. The contents of this repository are not officially supported by the Morro Linux project, and are intended to demonstrate or assist with the steps described in the accompanying guide. Use this repository at your own risk, and ensure you follow all instructions carefully to avoid issues with your system.
-We do not guarantee the accuracy, completeness, or functionality of the files within this repository. Please exercise caution and refer to the official Morro Linux documentation and community resources for any official guidance or support.
-Graphical aspect may vary depending on your choices in following the instructions below, but the end result should look something like this:
+# MAIN FEATURE
+- **Multiple AWS SSO Account Handling**
+  - Smooth switching between accounts without re-authentication.
+  - Visual indicators for active or connected accounts.
+
+- **Lateral Sidebar**
+  - Expandable and collapsible sections for better navigation.
+  - Grouped views for accounts, roles, or services.
+
+- **Nested Tabs**
+  - Support for nested tabs within the main interface.
+  - Drag-and-drop functionality to reorder or nest tabs.
+
+- **Clean Experience**
+  - Intuitive and modern UI with minimal distractions.
+  - Light and dark modes for better accessibility.
+
 
 # Original Guide
 https://gist.github.com/morrolinux/87aa37396432ea5d14a9220bc4892100
@@ -52,3 +65,8 @@ Go to `SideBery settings` --> `Styles editor` and add:
   --tabs-indent: 0;
 }
 ```
+
+# Disclaimer
+This repository has been cloned and is provided solely for archive purposes in relation to the Morro Linux guide. The contents of this repository are not officially supported by the Morro Linux project, and are intended to demonstrate or assist with the steps described in the accompanying guide. Use this repository at your own risk, and ensure you follow all instructions carefully to avoid issues with your system.
+We do not guarantee the accuracy, completeness, or functionality of the files within this repository. Please exercise caution and refer to the official Morro Linux documentation and community resources for any official guidance or support.
+Graphical aspect may vary depending on your choices in following the instructions below, but the end result should look something like this:
